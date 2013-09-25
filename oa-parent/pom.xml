@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.xiaocui.oa</groupId>
+	<artifactId>oa-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- *.v == *.version -->
+		<jbpm.v>5.4.0.Final</jbpm.v>
+	</properties>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.11</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jbpm</groupId>
+				<artifactId>jbpm-bpmn2</artifactId>
+				<version>${jbpm.v}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jbpm</groupId>
+				<artifactId>jbpm-persistence-jpa</artifactId>
+				<version>${jbpm.v}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jbpm</groupId>
+				<artifactId>jbpm-flow-builder</artifactId>
+				<version>${jbpm.v}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jbpm</groupId>
+				<artifactId>jbpm-bam</artifactId>
+				<version>${jbpm.v}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jbpm</groupId>
+				<artifactId>jbpm-human-task-core</artifactId>
+				<version>${jbpm.v}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jbpm</groupId>
+				<artifactId>jbpm-bpmn2</artifactId>
+				<version>${jbpm.v}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jbpm</groupId>
+				<artifactId>jbpm-test</artifactId>
+				<version>${jbpm.v}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jbpm</groupId>
+				<artifactId>jbpm-human-task</artifactId>
+				<version>${jbpm.v}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jbpm</groupId>
+				<artifactId>jbpm-workitems</artifactId>
+				<version>${jbpm.v}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+</project>
