@@ -6,6 +6,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<!-- 模块聚合 -->
+	<modules>
+		<module>../oa-core/pom.xml</module>
+	</modules>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- *.v == *.version -->
@@ -83,7 +88,7 @@
 		<!-- 插件管理 -->
 		<pluginManagement>
 			<plugins>
-			
+
 			</plugins>
 		</pluginManagement>
 	</build>
